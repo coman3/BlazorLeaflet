@@ -10,14 +10,14 @@
         [
             "@semantic-release/exec",
             {
-                "prepareCmd": "../../updateVersion.sh '${nextRelease.version}' 'BlazorLeaflet.csproj'"
+                "prepareCmd": "../../updateVersion.sh '${nextRelease.version}' 'BlazorLeaflet/BlazorLeaflet.csproj'"
             }
         ],
         [
             "@semantic-release/git",
             {
                 "assets": [
-                    "BlazorLeaflet.csproj"
+                    "BlazorLeaflet/BlazorLeaflet.csproj"
                 ],
                 "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
             }
