@@ -25,6 +25,7 @@ Check out the samples project to learn how to use it.
 Install the package in the target project:
 
 ```
+dotnet nuget add source --name github-coman3 "https://nuget.pkg.github.com/coman3/index.json"
 dotnet add package BlazorLeaflet
 ```
 
