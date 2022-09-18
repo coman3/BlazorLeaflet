@@ -42,7 +42,7 @@ jobs:
       - name: 'Build & Pack project'
         if: ${{ steps.release.outputs.new_release_version }}
         run: |
-          dotnet clean
+          dotnet clean ${{ env.PROJECT_PATH }}
           dotnet build ${{ env.PROJECT_PATH }} --configuration Release 
           dotnet pack ${{ env.PROJECT_PATH }} --no-build --include-symbols --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
 
