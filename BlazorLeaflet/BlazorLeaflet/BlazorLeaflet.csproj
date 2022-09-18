@@ -4,8 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <RazorLangVersion>3.0</RazorLangVersion>
     <Authors>Mihai Stan, Lachlan van der Velden</Authors>
-    <Version>1.1.4</Version>
-    <PackageVersion>1.1.4</PackageVersion>
+    <Version>1.1.5</Version>
+    <PackageVersion>1.1.5</PackageVersion>
     <Company />
     <Description>BlazorLeaflet is a wrapper offering easy-to-use Blazor components that expose the Leaflet API in C#.</Description>
     <Copyright>Mihai Stan</Copyright>
