@@ -10,7 +10,7 @@
         [
             "@semantic-release/exec",
             {
-                "prepareCmd": "../../updateVersion.sh '${nextRelease.version}' 'BlazorLeaflet/BlazorLeaflet.csproj'"
+                "prepareCmd": "../updateVersion.sh '${nextRelease.version}' 'BlazorLeaflet/BlazorLeaflet.csproj'"
             }
         ],
         [
