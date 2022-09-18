@@ -44,7 +44,7 @@ jobs:
         run: |
           dotnet clean ${{ env.PROJECT_PATH }}
           dotnet build ${{ env.PROJECT_PATH }} --configuration Release 
-          dotnet pack ${{ env.PROJECT_PATH }} --no-build --include-symbols --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
+          dotnet pack ${{ env.PROJECT_PATH }} --no-build --configuration Release --include-symbols --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
 
       - name: 'Publish project'
         if: ${{ steps.release.outputs.new_release_version }}
